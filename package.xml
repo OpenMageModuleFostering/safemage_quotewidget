@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>SafeMage_QuoteWidget</name>
+    <version>1.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://www.safemage.com/LICENSE_EULA.txt">SafeMage EULA</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Random Quote Widget</summary>
+    <description>Random Quote Widget</description>
+    <notes>Stable Release.</notes>
+    <authors><author><name>SafeMage</name><user>safemage</user><email>info@safemage.com</email></author></authors>
+    <date>2017-03-21</date>
+    <time>16:01:58</time>
+    <contents><target name="magecommunity"><dir name="SafeMage"><dir name="QuoteWidget"><dir name="Block"><dir name="Widget"><file name="Date.php" hash="914bb54807be821be3d7429d1ca0cd99"/></dir><file name="Widget.php" hash="dffba283a499e2789d7346ba5c12b3e3"/></dir><dir name="Helper"><file name="Data.php" hash="978cbe67fe5aba09b0db8020879aca6f"/></dir><dir name="data"><dir name="safemage_quotewidget_setup"><file name="data-install-1.0.0.php" hash="74585def62bbe513e1a96a315c055ccb"/></dir></dir><dir name="etc"><file name="config.xml" hash="414ef100d105fc20cbcba4fe84a632cf"/><file name="widget.xml" hash="d2d3d9e1638b4a41432567ee92f592ca"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="SafeMage_QuoteWidget.xml" hash="2cf4d755fc127b09b1e62606db16be73"/></dir></target><target name="magelocale"><dir name="en_US"><file name="SafeMage_QuoteWidget.csv" hash="327a1a424a51566838483f4abc364493"/></dir></target><target name="mageskin"><dir name="frontend"><dir name="base"><dir name="default"><dir name="safemage"><dir name="js"><file name="quotewidget.js" hash="ae33335b49c62eb9933724f58704aa32"/></dir></dir></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><dir name="safemage"><file name="quotewidget.xml" hash="de98f5dc5a1470a2272d7d0ac26cd2e3"/></dir></dir><dir name="template"><dir name="safemage"><dir name="quotewidget"><file name="widget.phtml" hash="7288f73f0c498a12801f0075236f03e2"/></dir></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.3.0</min><max>6.0.0</max></php></required></dependencies>
+</package>

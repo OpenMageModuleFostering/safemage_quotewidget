@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<!--
+NOTICE OF LICENSE
+
+This source file is subject to the SafeMageEULA that is bundled with this package in the file LICENSE.txt.
+
+It is also available at this URL: https://www.safemage.com/LICENSE_EULA.txt
+
+Copyright (c)  SafeMage (https://www.safemage.com/)
+-->
+<widgets>
+    <safemage_quotewidget type="safemage_quotewidget/widget" translate="name description" module="safemage_quotewidget">
+        <name>Random Quote</name>
+        <description>Quotes by some Authors</description>
+        <is_email_compatible>1</is_email_compatible>
+        <parameters>
+            <title translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Title</label>
+                <type>text</type>
+            </title>
+            <list translate="label description">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Quotes</label>
+                <type>textarea</type>
+                <description>Quotes separated by new line</description>
+            </list>
+            <from_date translate="label">
+                <visible>1</visible>
+                <label>Show from Date</label>
+                <type>date</type>
+                <helper_block>
+                    <type>safemage_quotewidget/widget_date</type>
+                </helper_block>
+            </from_date>
+            <to_date translate="label">
+                <visible>1</visible>
+                <label>Show to Date</label>
+                <type>date</type>
+                <helper_block>
+                    <type>safemage_quotewidget/widget_date</type>
+                </helper_block>
+            </to_date>
+            <animation_duration translate="label">
+                <visible>1</visible>
+                <required>1</required>
+                <label>Animation Duration (Seconds)</label>
+                <type>text</type>
+            </animation_duration>
+            <cache_lifetime translate="label description">
+                <label>Cache Lifetime (Seconds)</label>
+                <description>86400 by default, if not set. To refresh instantly, Clear the Blocks HTML Output Cache.</description>
+                <visible>1</visible>
+                <type>text</type>
+            </cache_lifetime>
+        </parameters>
+    </safemage_quotewidget>
+</widgets>

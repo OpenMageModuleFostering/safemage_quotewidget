@@ -1,0 +1,57 @@
+<?php
+/*
+NOTICE OF LICENSE
+
+This source file is subject to the SafeMageEULA that is bundled with this package in the file LICENSE.txt.
+
+It is also available at this URL: https://www.safemage.com/LICENSE_EULA.txt
+
+Copyright (c)  SafeMage (https://www.safemage.com/)
+*/
+?>
+<?php if ($this->canShow()): ?>
+<style type="text/css">
+    .random-quote-widget{
+        border: 1px solid red;
+        float: right;
+        padding: 6px;
+        width: 44%;
+    }
+    .random-quote-widget-item {
+        opacity: 1;
+        -webkit-animation: fadeinout <?php echo $this->getDuration(); ?>s linear 1 forwards;
+        animation: fadeinout <?php echo $this->getDuration(); ?>s linear 1 forwards;
+    }
+    @-webkit-keyframes fadeinout {
+          0% { opacity: 0; }
+         15% { opacity: 1; }
+         85% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+    @keyframes fadeinout {
+          0% { opacity: 0; }
+         15% { opacity: 1; }
+         85% { opacity: 1; }
+        100% { opacity: 0; }
+    }
+</style>
+
+<div class="random-quote-widget <?php echo $this->getWrapperClassName(); ?>">
+    <h3><?php echo $this->getTitle() ?></h3>
+    <?php foreach($this->getItems() as $item): ?>
+    <div class="random-quote-widget-item">
+        <?php echo $item->getQuote() ?>
+        <?php if ($item->getAuthor()): ?><div align="right"><i><?php echo $item->getAuthor() ?></i></div><?php endif; ?>
+    </div>
+    <?php endforeach; ?>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+<?php echo $this->getJsObjectName(); ?> = new SafeMageQuoteWidget({
+    quotesSelector: '<?php echo $this->getQuotesSelector(); ?>',
+    animationTime: <?php echo $this->getDuration(); ?>
+});
+//]]>
+</script>
+<?php endif; ?>

@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+NOTICE OF LICENSE
+
+This source file is subject to the SafeMageEULA that is bundled with this package in the file LICENSE.txt.
+
+It is also available at this URL: https://www.safemage.com/LICENSE_EULA.txt
+
+Copyright (c)  SafeMage (https://www.safemage.com/)
+-->
+<config>
+    <modules>
+        <SafeMage_QuoteWidget>
+            <version>1.0.0</version>
+        </SafeMage_QuoteWidget>
+    </modules>
+    <frontend>
+        <layout>
+            <updates>
+                <safemage_quotewidget>
+                    <file>safemage/quotewidget.xml</file>
+                </safemage_quotewidget>
+            </updates>
+        </layout>
+    </frontend>
+    <adminhtml>
+        <translate>
+            <modules>
+                <SafeMage_Plugin>
+                    <files>
+                        <default>SafeMage_QuoteWidget.csv</default>
+                    </files>
+                </SafeMage_Plugin>
+            </modules>
+        </translate>
+    </adminhtml>
+    <global>
+        <blocks>
+            <safemage_quotewidget>
+                <class>SafeMage_QuoteWidget_Block</class>
+            </safemage_quotewidget>
+        </blocks>
+        <helpers>
+            <safemage_quotewidget>
+                <class>SafeMage_QuoteWidget_Helper</class>
+            </safemage_quotewidget>
+        </helpers>
+        <resources>
+            <safemage_quotewidget_setup>
+                <setup>
+                    <module>SafeMage_QuoteWidget</module>
+                </setup>
+            </safemage_quotewidget_setup>
+        </resources>
+    </global>
+</config>

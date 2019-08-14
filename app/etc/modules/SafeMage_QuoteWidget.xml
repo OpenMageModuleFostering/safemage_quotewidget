@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+<!--
+NOTICE OF LICENSE
+
+This source file is subject to the SafeMageEULA that is bundled with this package in the file LICENSE.txt.
+
+It is also available at this URL: https://www.safemage.com/LICENSE_EULA.txt
+
+Copyright (c)  SafeMage (https://www.safemage.com/)
+-->
+<config>
+    <modules>
+        <SafeMage_QuoteWidget>
+            <active>true</active>
+            <codePool>community</codePool>
+            <extension_name>Random Quote Widget</extension_name>
+            <cache_key>random</cache_key>
+            <url>random-quote-widget-extension-for-magento</url>
+        </SafeMage_QuoteWidget>
+    </modules>
+</config>
