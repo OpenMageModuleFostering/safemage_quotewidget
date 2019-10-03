@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/SafeMage_QuoteWidget",
+    "name": "OpenMageModuleFostering\/SafeMage_QuoteWidget",
     "type": "magento-module",
     "license": "SafeMage-EULA",
     "homepage": "",
     "description": "Random Quote Widget",
     "authors": [
-    {
-        "name": "SafeMage",
-        "email": "info@safemage.com"
-    }
-],
+        {
+            "name": "SafeMage",
+            "email": "info@safemage.com"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
